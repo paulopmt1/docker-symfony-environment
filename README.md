@@ -8,6 +8,6 @@ First, you'll need docker and docker-compose:
 
 ## How to install a new Symfony web application
 
-1. Start the environment: ```docker-compose up -d```
-2. Login on the container with ```docker exec -it dev_apache_php74 /bin/bash```
+1. Start the environment: ```sudo docker-compose up -d```
+2. Login on the container with ```sudo docker exec -it dev_apache_php74 /bin/bash```
 3. Run: ```composer create-project symfony/website-skeleton:"^4.4" /var/www/html/``` (4.4 is the latest LTS symfony version)
