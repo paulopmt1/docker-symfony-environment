@@ -1,6 +1,11 @@
 ## PHP 7.4 with Apache
 This docker runs Symfony applications through apache and php-7.4
 
+## Docker and docker-compose install
+First, you'll need docker and docker-compose:
+- [Install Docker](https://docs.docker.com/install/)
+- [Install docker compose](https://docs.docker.com/compose/install/)
+
 ## How to install a new Symfony web application
 
 1. Start the environment: ```docker-compose up -d```
