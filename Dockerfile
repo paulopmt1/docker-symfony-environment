@@ -4,6 +4,8 @@ RUN apt-get update && apt-get install -y libmagickwand-dev wget git vim --no-ins
     && rm -rf /var/lib/apt/lists/* 
 RUN printf "\n" | pecl install imagick
 RUN docker-php-ext-enable imagick
+RUN docker-php-ext-install mysqli pdo pdo_mysql
+RUN a2enmod rewrite
 
 # Install composer
 RUN wget https://getcomposer.org/composer.phar -O /usr/bin/composer
